@@ -1,0 +1,15 @@
+<label for="addUser" class="control-label mt-3">Add New User</label>
+<form novalidate class="form-inline">
+  <div class="row mb-3">
+    <div class="col-12">
+      <div class="input-group">
+        <input type="text" id="addUser" name="addUser" class="form-control" [(ngModel)]="newUserInput"
+               [ngModelOptions]="{standalone: true}"/>
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="add-user-button"
+                  (click)="submit()" [disabled]="!newUserInput">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

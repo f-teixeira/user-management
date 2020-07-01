@@ -1,0 +1,10 @@
+.user-man-footer, .user-man-header{
+  height: 100px;
+  background-color: blue;
+  color: white;
+}
+
+.user-man-content {
+  height: calc(100vh - 200px);
+  overflow: auto;
+}
